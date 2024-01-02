@@ -58,22 +58,33 @@ body {
   margin-bottom: 1rem;
 }
 
+.hero__paragraph {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
 .hero__cta {
   display: block;
   width: fit-content;
   text-decoration: none;
   font-weight: bolder;
   color: black;
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-  background-blend-mode: screen;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #add3d2 100%);
   padding: 0.6rem 1.2rem;
   border-radius: 0.6rem;
   margin: 0 auto;
+  transition: all 0.5s;
+}
+
+.hero__cta:hover {
+  background-image: linear-gradient(-225deg, #add3d2 0%, #fffeff 100%);
+  transform: scale(1.1);
+}
+
+.hero__cta:active {
+  transform: scale(0.9);
 }
 
 .hero__figure {
@@ -85,7 +96,8 @@ body {
 
 .hero__img {
   width: 50%;
-  filter: drop-shadow(0px 0px 1rem white);
+  filter: drop-shadow(0px 0px 0.4rem white);
+  animation: latido 1s infinite alternate-reverse;
 }
 
 .hero__img:hover {
@@ -95,7 +107,7 @@ body {
 .hero__autor {
   position: absolute;
   right: 6rem;
-  bottom: 2rem;
+  bottom: 1.2rem;
   height: 3.5rem;
   width: 280px;
 }
@@ -115,6 +127,22 @@ body {
   text-align: center;
 }
 
+.hero__figure__autor::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 65%;
+  position: relative;
+  bottom: 1rem;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .hero__img--height {
   height: 100%;
+}
+
+@keyframes latido {
+  to {
+    filter: drop-shadow(0px 0px 1.2rem white);
+  }
 }
