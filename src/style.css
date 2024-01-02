@@ -1,5 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik+Doodle+Shadow&display=swap");
+
+:root {
+  --minimo: 50vw;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  /* outline: 1px solid red; */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  background-image: url("images/wave_bottom.svg"),
+    linear-gradient(to right, #434343 0%, black 100%);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: bottom;
+  position: relative;
+}
+
+.hero__content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero__section {
+  flex: 1;
+}
+
+.hero__title {
+  font-family: "Rubik Doodle Shadow", "cursive";
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.hero__cta {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  margin: 0 auto;
+}
+
+.hero__figure {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__img {
+  width: 50%;
+  filter: drop-shadow(0px 0px 1rem white);
+}
+
+.hero__img:hover {
+  cursor: pointer;
+}
+
+.hero__autor {
+  position: absolute;
+  right: 6rem;
+  bottom: 2rem;
+  height: 3.5rem;
+  width: 280px;
+}
+
+.hero__figure--container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero__figure__autor {
+  color: transparent;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  -webkit-background-clip: text;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  line-height: 3.5rem;
+  text-align: center;
+}
+
+.hero__img--height {
+  height: 100%;
 }
