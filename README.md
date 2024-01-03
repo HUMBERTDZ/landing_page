@@ -4,3 +4,4 @@ Este repositorio me va a permitir aprender sobre GITHUB siguiendo el curso de fe
 
 >[!NOTE]
 > No estoy muy seguro si funcionará por la configuración de GIT
+> seguimos intentando alv
